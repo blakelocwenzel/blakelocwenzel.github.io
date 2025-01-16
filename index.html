@@ -8,13 +8,20 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #f0f0f0; /* Light gray background */
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full screen height */
         }
         header {
             background-color: #4CAF50;
             color: white;
             padding: 1em 0;
+            width: 100%;
         }
         nav {
             margin: 20px 0;
@@ -24,9 +31,17 @@
             text-decoration: none;
             color: #4CAF50;
             font-weight: bold;
+            font-size: 1.2em;
         }
         section {
             margin-top: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -45,8 +60,8 @@
     </section>
     <script>
         // Replace with your first and last name
-        const firstName = "Nicolas";
-        const lastName = "Smith"; // Replace "Smith" with your last name
+        const firstName = "Blake Loc";
+        const lastName = "Wenzel"; // Replace "Smith" with your last name
         document.getElementById("name").innerText = `${firstName} ${lastName}`;
     </script>
 </body>
