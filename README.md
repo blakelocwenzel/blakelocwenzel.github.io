@@ -1,5 +1,4 @@
 # blakelocwenzel.github.io
 
-# working in progress.
+# working in progress. 
 
-# blakelocwenzel@outlook.com
