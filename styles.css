@@ -18,9 +18,8 @@ body {
   border-right: 0.15em solid #eaeaea;
   white-space: nowrap;
   margin: 20px auto;
-  letter-spacing: 0.1em;
-  animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
-  /* Remove width: 0; */
+  letter-spacing: 0.0em;
+  animation: typing 2s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -33,62 +32,24 @@ body {
   50% { border-color: #eaeaea; }
 }
 
-/* Navigation Bar */
-nav {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  background-color: #1b1b1b;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-}
-nav a {
-  color: #eaeaea;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 1.1rem;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Main Content */
-main {
-  text-align: center;
-  max-width: 80%;
-  margin: 0 auto;
-}
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 20px 0;
-}
-p {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-a.resume-link {
-  color: #9bd5ff;
-  text-decoration: none;
-}
-a.resume-link:hover {
-  text-decoration: underline;
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .typewriter {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  nav a {
+    font-size: 0.9rem;
+    margin: 0 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  footer a {
+    font-size: 1rem;
+  }
 }
 
-/* Footer */
-footer {
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-footer a {
-  color: #eaeaea;
-  margin: 0 10px;
-  font-size: 1.2rem;
-}
-footer a:hover {
-  text-decoration: underline;
-}
