@@ -18,7 +18,8 @@ body {
   white-space: nowrap;
   margin: 20px auto;
   letter-spacing: 0.0em;
-  animation: typing 2.2s steps(40, end) forwards;
+  animation: typing 2s steps(40, end) forwards;
+  max-width: 100%;
 }
 
 @keyframes typing {
@@ -106,7 +107,8 @@ footer a:hover {
   }
   .typewriter {
     font-size: 1.5rem;
-    white-space: normal;
+    white-space: nowrap;
     word-wrap: break-word;
+    overflow: hidden;
   }
 }
