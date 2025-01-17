@@ -10,6 +10,26 @@ body {
   align-items: center;
   height: 100vh;
 }
+/* Typewriter Animation */
+.typewriter {
+  overflow: hidden; /* Ensures the text doesn't wrap */
+  border-right: 0.15em solid #eaeaea; /* Cursor effect */
+  white-space: nowrap; /* Prevent the text from wrapping */
+  margin: 20px auto; /* Center the text */
+  letter-spacing: 0.15em; /* Add a bit of spacing */
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #eaeaea; }
+}
+
 
 /* Navigation Bar */
 nav {
