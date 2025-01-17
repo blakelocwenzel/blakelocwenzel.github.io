@@ -61,7 +61,7 @@ main {
   padding-bottom: 10px; /* Reduced padding */
 }
 h1 {
-  font-size: 2.5rem; /* Reduced font size */
+  font-size: 3rem; /* Reduced font size */
   font-weight: bold;
   margin: 10px 0; /* Reduced margin */
   word-wrap: break-word; /* Added property */
@@ -104,7 +104,7 @@ footer a:hover {
     overflow-y: auto; /* Allow vertical scrolling if necessary */
   }
   h1 {
-    font-size: 2.5rem; /* Increased font size for readability */
+    font-size: 1.5rem; /* Increased font size for readability */
     word-wrap: break-word; /* Added property */
     white-space: normal; /* Added property */
   }
@@ -118,7 +118,7 @@ footer a:hover {
     font-size: 1rem;
   }
   .typewriter {
-    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
     white-space: nowrap;
     overflow: hidden;
     animation: typing 1.8s steps(30, end), blink-caret .75s step-end infinite;
