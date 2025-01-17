@@ -10,28 +10,18 @@ body {
   align-items: center;
   height: 100vh;
 }
-/* Typewriter Animation */
+
 .typewriter {
-  overflow: hidden; /* Ensures the text doesn't wrap */
+  display: inline-block; /* Allows wrapping with animation */
+  overflow: hidden; /* Ensures text doesn't overflow */
   border-right: 0.15em solid #eaeaea; /* Cursor effect */
   white-space: normal; /* Allows the text to wrap */
-  word-break: break-word; /* Ensures long words break onto the next line */
+  word-wrap: break-word; /* Breaks long words */
   margin: 20px auto; /* Center the text */
-  letter-spacing: 0em;
-  animation: typing 1s steps(30, end); /*blink-caret 0.75s step-end infinite */
-  
+  letter-spacing: 0em; /* Adjust letter spacing */
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite; /* Add blinking caret */
+  max-width: 100%; /* Ensure the text fits within the container */
 }
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: #eaeaea; }
-}
-
 
 /* Navigation Bar */
 nav {
