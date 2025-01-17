@@ -17,8 +17,8 @@ body {
   overflow: hidden;
   white-space: nowrap;
   margin: 20px auto;
-  letter-spacing: 0.1em;
-  animation: typing 3s steps(40, end) forwards;
+  letter-spacing: 0.0em;
+  animation: typing 2.5s steps(40, end) forwards;
 }
 
 @keyframes typing {
