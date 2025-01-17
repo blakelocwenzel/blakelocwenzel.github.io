@@ -12,16 +12,26 @@ body {
 }
 
 .typewriter {
-  display: inline-block; /* Allows wrapping with animation */
-  overflow: hidden; /* Ensures text doesn't overflow */
-  border-right: 0.15em solid #eaeaea; /* Cursor effect */
-  white-space: normal; /* Allows the text to wrap */
-  word-wrap: break-word; /* Breaks long words */
-  margin: 20px auto; /* Center the text */
-  letter-spacing: 0em; /* Adjust letter spacing */
-  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite; /* Add blinking caret */
-  max-width: 100%; /* Ensure the text fits within the container */
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid #eaeaea;
+  white-space: nowrap; /* Disable wrapping for the animation */
+  margin: 20px auto;
+  letter-spacing: 0em;
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+  width: 0; /* Start width for animation */
 }
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #eaeaea; }
+}
+
 
 /* Navigation Bar */
 nav {
