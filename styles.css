@@ -9,6 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow-y: hidden; /* Hide vertical scrollbar */
 }
 
 /* Typewriter Animation */
@@ -40,13 +41,13 @@ nav {
   background-color: #1b1b1b;
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 5px 0; /* Reduced padding */
 }
 nav a {
   color: #eaeaea;
   text-decoration: none;
-  margin: 0 15px;
-  font-size: 1.1rem;
+  margin: 0 10px; /* Reduced margin */
+  font-size: 1rem; /* Reduced font size */
 }
 nav a:hover {
   text-decoration: underline;
@@ -55,19 +56,20 @@ nav a:hover {
 /* Main Content */
 main {
   text-align: center;
-  max-width: 80%;
+  max-width: 90%; /* Increased max-width */
   margin: 0 auto;
+  padding-bottom: 10px; /* Reduced padding */
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem; /* Reduced font size */
   font-weight: bold;
-  margin: 20px 0;
+  margin: 10px 0; /* Reduced margin */
   word-wrap: break-word; /* Added property */
   white-space: normal; /* Added property */
 }
 p {
-  font-size: 1.2rem;
-  margin: 10px 0;
+  font-size: 1rem; /* Reduced font size */
+  margin: 5px 0; /* Reduced margin */
 }
 a.resume-link {
   color: #9bd5ff;
@@ -87,8 +89,8 @@ footer {
 }
 footer a {
   color: #eaeaea;
-  margin: 0 10px;
-  font-size: 1.2rem;
+  margin: 0 5px; /* Reduced margin */
+  font-size: 1rem; /* Reduced font size */
 }
 footer a:hover {
   text-decoration: underline;
@@ -98,10 +100,11 @@ footer a:hover {
 @media (max-width: 768px) {
   body {
     justify-content: flex-start;
-    padding-top: 60px;
+    padding-top: 40px; /* Reduced padding */
+    overflow-y: auto; /* Allow vertical scrolling if necessary */
   }
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Increased font size for readability */
     word-wrap: break-word; /* Added property */
     white-space: normal; /* Added property */
   }
