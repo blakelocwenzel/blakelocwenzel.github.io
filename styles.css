@@ -11,6 +11,19 @@ body {
   height: 100vh;
 }
 
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1b1b1b;
+  color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 /* Typewriter Animation */
 .typewriter {
   display: inline-block;
@@ -18,9 +31,8 @@ body {
   border-right: 0.15em solid #eaeaea;
   white-space: nowrap;
   margin: 20px auto;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.0em;
   animation: typing 2s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
-  /* Remove width: 0; */
 }
 
 @keyframes typing {
@@ -32,6 +44,28 @@ body {
   from, to { border-color: transparent; }
   50% { border-color: #eaeaea; }
 }
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .typewriter {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  nav a {
+    font-size: 0.9rem;
+    margin: 0 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  footer a {
+    font-size: 1rem;
+  }
+}
+
 
 /* Navigation Bar */
 nav {
