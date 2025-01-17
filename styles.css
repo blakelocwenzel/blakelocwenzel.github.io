@@ -11,6 +11,19 @@ body {
   height: 100vh;
 }
 
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1b1b1b;
+  color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 /* Typewriter Animation */
 .typewriter {
   display: inline-block;
@@ -31,6 +44,28 @@ body {
   from, to { border-color: transparent; }
   50% { border-color: #eaeaea; }
 }
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .typewriter {
+    font-size: 1.5rem; /* Increased font size */
+    width: 90%;
+  }
+  nav a {
+    font-size: 1rem; /* Increased font size */
+    margin: 0 10px;
+  }
+  h1 {
+    font-size: 2.5rem; /* Increased font size */
+  }
+  p {
+    font-size: 1.2rem; /* Increased font size */
+  }
+  footer a {
+    font-size: 1.2rem; /* Increased font size */
+  }
+}
+
 
 /* Responsive Styling */
 @media (max-width: 600px) {
