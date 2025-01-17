@@ -15,22 +15,15 @@ body {
 .typewriter {
   display: inline-block;
   overflow: hidden;
-  border-right: 0.15em solid #eaeaea;
   white-space: nowrap;
   margin: 20px auto;
-  letter-spacing: 0.1em;
-  animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
-  /* Remove width: 0; */
+  letter-spacing: 0.0em;
+  animation: typing 1.5s steps(40, end) forwards;
 }
 
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: #eaeaea; }
 }
 
 /* Navigation Bar */
@@ -91,4 +84,24 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  footer a {
+    font-size: 1rem;
+  }
 }
