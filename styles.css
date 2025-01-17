@@ -16,7 +16,7 @@ body {
   border-right: 0.15em solid #eaeaea; /* Cursor effect */
   white-space: nowrap; /* Prevent the text from wrapping */
   margin: 20px auto; /* Center the text */
-  letter-spacing: 0.10em; /* Add a bit of spacing */
+ /* letter-spacing: 0em;  Add a bit of spacing */
   animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
   white-space: normal; /* Allows the text to wrap */
   word-break: break-word; /* Ensures long words break onto the next line */
