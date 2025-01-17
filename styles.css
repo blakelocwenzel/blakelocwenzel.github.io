@@ -11,14 +11,15 @@ body {
   height: 100vh;
 }
 
+/* Typewriter Animation */
 .typewriter {
   display: inline-block;
   overflow: hidden;
-  border-right: 0.15em solid #eaeaea;
-  white-space: nowrap; /* Disable wrapping for the animation */
+  border-right: 0.15em solid #eaeaea; /* Cursor effect */
+  white-space: nowrap; /* Prevent wrapping for animation */
   margin: 20px auto;
-  letter-spacing: 0em;
-  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+  letter-spacing: 0.1em; /* Adjust spacing */
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite; /* Add blinking caret */
   width: 0; /* Start width for animation */
 }
 
@@ -31,7 +32,6 @@ body {
   from, to { border-color: transparent; }
   50% { border-color: #eaeaea; }
 }
-
 
 /* Navigation Bar */
 nav {
@@ -56,7 +56,8 @@ nav a:hover {
 /* Main Content */
 main {
   text-align: center;
-  margin-top: 22px;
+  max-width: 80%; /* Control text wrapping */
+  margin: 0 auto;
 }
 h1 {
   font-size: 3rem;
