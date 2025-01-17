@@ -19,8 +19,8 @@ body {
   white-space: nowrap;
   margin: 20px auto;
   letter-spacing: 0.1em;
-  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+  /* Remove width: 0; */
 }
 
 @keyframes typing {
