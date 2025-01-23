@@ -103,14 +103,14 @@ footer a:hover {
   body {
     justify-content: center;
     align-items: center;
-    padding-top: 20px; /* Adjusted padding to move content higher */
+    padding-top: 60px; /* Ensure content starts below fixed nav */
     overflow-x: hidden; /* Hide horizontal scrollbar */
     overflow-y: hidden; /* Hide vertical scrollbar */
   }
   main {
     width: 100%;
     padding: 0 20px; /* Add padding to avoid text touching the edges */
-    margin-top: -40px; /* Move content higher */
+    margin-top: -80px; /* Move content higher */
   }
   h1 {
     font-size: 1.9rem; /* Adjust font size for readability */
