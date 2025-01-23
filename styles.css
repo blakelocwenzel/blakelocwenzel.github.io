@@ -8,8 +8,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: hidden; /* Hide vertical scrollbar */
 }
 
 /* Typewriter Animation */
@@ -100,12 +101,19 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 800px) {
   body {
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     padding-top: 60px; /* Ensure content starts below fixed nav */
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+  }
+  main {
+    width: 100%;
+    padding: 0 20px; /* Add padding to avoid text touching the edges */
+    margin-top: -40px; /* Move content higher */
   }
   h1 {
-    font-size: 1.9rem; /* Increased font size for readability */
+    font-size: 1.9rem; /* Adjust font size for readability */
     word-wrap: break-word; /* Added property */
     white-space: normal; /* Added property */
   }
