@@ -103,7 +103,7 @@ footer a:hover {
   body {
     justify-content: center;
     align-items: center;
-    padding-top: 60px; /* Ensure content starts below fixed nav */
+    padding-top: 20px; /* Adjusted padding to move content higher */
     overflow-x: hidden; /* Hide horizontal scrollbar */
     overflow-y: hidden; /* Hide vertical scrollbar */
   }
