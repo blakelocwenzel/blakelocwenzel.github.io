@@ -8,8 +8,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  overflow-y: hidden; /* Hide vertical scrollbar */
+  min-height: 100vh;
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
@@ -59,8 +58,8 @@ main {
   text-align: center;
   max-width: 90%; /* Increased max-width */
   margin: 0 auto;
+  padding-top: 60px; /* Added padding to accommodate fixed nav */
   padding-bottom: 10px; /* Reduced padding */
-  overflow: hidden; /* Ensure content doesn't overflow */
 }
 h1 {
   font-size: 3rem; /* Reduced font size */
@@ -102,8 +101,7 @@ footer a:hover {
 @media (max-width: 800px) {
   body {
     justify-content: flex-start;
-    padding-top: 40px; /* Reduced padding */
-    overflow-y: auto;  /* Allow vertical scrolling if necessary */
+    padding-top: 60px; /* Ensure content starts below fixed nav */
     overflow-x: hidden; /* Hide horizontal scrollbar */
   }
   h1 {
