@@ -110,7 +110,7 @@ footer a:hover {
   main {
     width: 100%;
     padding: 0 20px; /* Add padding to avoid text touching the edges */
-    margin-top: -80px; /* Move content higher */
+    margin-top: -120px; /* Move content higher */
   }
   h1 {
     font-size: 1.9rem; /* Adjust font size for readability */
